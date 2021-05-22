@@ -5,3 +5,9 @@
 raw_data/
 **/__pycache__/
 .env
+scripts/
+notebooks/
+tests/
+.github/workflows/
+.github/
+mlruns/
