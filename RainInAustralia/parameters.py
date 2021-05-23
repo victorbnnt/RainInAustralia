@@ -5,10 +5,6 @@ from sklearn.preprocessing import RobustScaler
 
 # models
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.ensemble import AdaBoostRegressor
-from sklearn.svm import SVR
 
 # others
 from scipy import stats

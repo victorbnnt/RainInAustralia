@@ -14,7 +14,7 @@ def get_data():
     return pd.read_csv(train_set)
 
 
-def clean_data(df):
+def clean_data(df, reduced=False):
     ''' Cleans dataset'''
 
     # removes duplicates if any
@@ -37,6 +37,9 @@ def clean_data(df):
     df = df[(~df["RainToday"].isnull())]
     df["RainTomorrow"] = df["RainTomorrow"].apply(lambda x: 1 if x == "Yes" else 0)
     df["RainToday"] = df["RainToday"].apply(lambda x: 1 if x == "Yes" else 0)
+
+    if reduced is True:
+        df = df[["Humidity3pm", "WindGustSpeed", "Location", "Pressure9am", "MinTemp", "RainTomorrow"]]
     return df
 
 

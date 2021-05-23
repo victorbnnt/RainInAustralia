@@ -182,7 +182,8 @@ if __name__ == "__main__":
     data = get_data()
 
     # clean data
-    data = clean_data(data)
+    data = clean_data(data, reduced=True)
+    print(data)
 
     # set X and y
     X = data.drop(["RainTomorrow"], axis=1)
