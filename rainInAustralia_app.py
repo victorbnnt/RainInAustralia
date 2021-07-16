@@ -84,9 +84,9 @@ mintemp = st.slider('The minimum temperature in degrees celsius', -8.5, 33.9, 22
 #url = f"http://127.0.0.1:8000/predict_rain?Humidity3pm={humidity3pm}&WindGustSpeed={windgustspeed}&Location={Location}&Pressure9am={pressure9am}&MinTemp={mintemp}"
 url = f"https://raininaustralia-n2o267u7cq-ew.a.run.app/predict_rain?Humidity3pm={humidity3pm}&WindGustSpeed={windgustspeed}&Location={Location}&Pressure9am={pressure9am}&MinTemp={mintemp}"
 response = requests.get(url).json()
-proba = float(response['RainProba'])
+proba = float(str(response['RainProba'])[:5])
 
-prediction = f"<br/><div style='font-weight:700; display:block; text-align:center'>Probability of rain tomorrow in {Location}:<br/> <span style='font-size:30pt'>{100*proba}% </span></div>"
+prediction = f"<br/><div style='font-weight:700; display:block; text-align:center'>Probability of rain tomorrow in {Location}:<br/> <span style='font-size:30pt'>{str(100*proba)[:5]}% </span></div>"
 
 st.write(prediction, unsafe_allow_html=True)
 
