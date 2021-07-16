@@ -34,6 +34,6 @@ def predict_rain(Humidity3pm, WindGustSpeed, Location, Pressure9am, MinTemp):
     y_pred = model.best_estimator_.predict(X_pred).tolist()
     y_pred_proba = model.best_estimator_.predict_proba(X_pred).tolist()
     return {
-             "RainProba": y_pred_proba[0][1],
-             "RainPrediction": y_pred[0]
+             "RainProba": round(float(y_pred_proba[0][1]), 3),
+             "RainPrediction": int(y_pred[0])
            }

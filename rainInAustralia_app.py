@@ -84,4 +84,27 @@ mintemp = st.slider('The minimum temperature in degrees celsius', -8.5, 33.9, 22
 #url = f"http://127.0.0.1:8000/predict_rain?Humidity3pm={humidity3pm}&WindGustSpeed={windgustspeed}&Location={Location}&Pressure9am={pressure9am}&MinTemp={mintemp}"
 url = f"https://raininaustralia-n2o267u7cq-ew.a.run.app/predict_rain?Humidity3pm={humidity3pm}&WindGustSpeed={windgustspeed}&Location={Location}&Pressure9am={pressure9am}&MinTemp={mintemp}"
 response = requests.get(url).json()
-response
+proba = float(response['RainProba'])
+
+prediction = f"<br/><div style='font-weight:700; display:block; text-align:center'>Probability of rain tomorrow in {Location}:<br/> <span style='font-size:30pt'>{100*proba}% </span></div>"
+
+st.write(prediction, unsafe_allow_html=True)
+
+separator = "<div style='disply:block; width:50%; margin:auto; margin-top:50px; margin-bottom:40px; height:5px; background-color:#1E1E1E; border-radius:10px'></div>"
+st.write(separator, unsafe_allow_html=True)
+
+model_params = """<br/><i><ul>
+<li><b>C</b>: 0.2879083123115035</li>
+<li><b>class_weight</b>: balanced</li>
+<li><b>penalty</b>: l2</li>
+<li><b>solver</b>: liblinear</li>
+<li><b>tol</b>: 0.11151870934296831</li>
+<li><b>imputer for missing values</b>: mean</li>
+<li><b>scaler</b>: Robust Scaler</li></ul></i>"""
+
+infos = "<div style='text-align:justify'><i>The model used for this prediction is a <b>Logistic Regression</b> model with the following parameters:</i></div>" + model_params
+st.write(infos, unsafe_allow_html=True)
+
+st.markdown("""
+    ###### The whole process leading to this model is detailed [here](https://www.kaggle.com/victorbnnt/rain-in-australia).
+""")
