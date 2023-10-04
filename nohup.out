@@ -1,0 +1,136 @@
+INFO:     Started server process [355289]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8904): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [355689]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8904): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [356480]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49306 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49318 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49318 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49306 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49306 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49318 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49318 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49318 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57702 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57708 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33554 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33554 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33562 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33940 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+2023-10-04 19:08:10.214 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     127.0.0.1:37740 - "GET /_stcore/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37750 - "GET /_stcore/allowed-message-origins HTTP/1.1" 404 Not Found
+2023-10-04 19:09:20.602 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connection.py", line 395, in request
+    self.endheaders()
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connection.py", line 243, in connect
+    self.sock = self._new_conn()
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x7fd0f2e6a040>: Failed to resolve 'local_host' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='local_host', port=8904): Max retries exceeded with url: /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fd0f2e6a040>: Failed to resolve 'local_host' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 541, in _run_script
+    exec(code, module.__dict__)
+  File "/home/victorbonnet/workspace/rain_in_australia/rainInAustralia_app.py", line 86, in <module>
+    response = requests.get(url).json()
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/victorbonnet/.pyenv/versions/3.8.6/envs/rain/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='local_host', port=8904): Max retries exceeded with url: /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fd0f2e6a040>: Failed to resolve 'local_host' ([Errno -3] Temporary failure in name resolution)"))
+INFO:     127.0.0.1:40218 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40218 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40218 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48266 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48266 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48266 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48278 - "GET /predict_rain?Humidity3pm=30&WindGustSpeed=44&Location=Adelaide&Pressure9am=1000&MinTemp=0 HTTP/1.1" 200 OK
+  Stopping...
+2023-10-04 19:12:33.781 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     127.0.0.1:33290 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36800 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
