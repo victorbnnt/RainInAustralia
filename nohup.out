@@ -134,3 +134,252 @@ If cross origin resource sharing is required, please disable server.enableXsrfPr
 
 INFO:     127.0.0.1:33290 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:36800 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52580 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46794 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58768 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37620 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46448 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51460 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Alice%20Springs&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51476 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Alice%20Springs&Pressure9am=1000.0&MinTemp=22.16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34960 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Alice%20Springs&Pressure9am=1000.0&MinTemp=15.05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34974 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Alice%20Springs&Pressure9am=1000.0&MinTemp=14.93 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34980 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Alice%20Springs&Pressure9am=1000.0&MinTemp=7.34 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34202 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43686 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     Started server process [14742]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2023-10-13 11:11:05.015 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+Usage: streamlit run [OPTIONS] TARGET [ARGS]...
+Try 'streamlit run --help' for help.
+
+Error: Invalid value: File does not exist: titanic_app.py
+2023-10-13 11:11:38.226 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     127.0.0.1:50158 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49648 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56674 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     Started server process [13945]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2023-10-30 10:03:10.096 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     Started server process [6399]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2023-10-30 10:50:36.071 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     Started server process [5903]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2023-11-16 08:49:42.237 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.242.204.44:8905
+
+INFO:     127.0.0.1:42358 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     Started server process [5994]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2024-02-12 22:22:15.459 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://90.127.247.163:8905
+
+INFO:     127.0.0.1:54446 - "GET /predict_rain?Humidity3pm=30.0&WindGustSpeed=44.0&Location=Adelaide&Pressure9am=1000.0&MinTemp=22.0 HTTP/1.1" 200 OK
+INFO:     Started server process [15285]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2024-04-14 19:03:14.373 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://90.127.247.163:8905
+
+INFO:     Started server process [6021]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2024-05-13 21:50:45.942 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://90.127.247.163:8905
+
+INFO:     Started server process [6999]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2024-06-15 19:20:57.017 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.238.63.68:8905
+
+INFO:     Started server process [7279]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+2024-07-31 03:57:31.199 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.238.63.68:8905
+
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7279]
+INFO:     Started server process [63654]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8904): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+2024-08-06 23:59:19.855 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://192.168.1.17:8905
+  External URL: http://86.238.63.68:8905
+
+  Stopping...
